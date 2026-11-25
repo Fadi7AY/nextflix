@@ -9,6 +9,17 @@ Deployed it using vercel [here](https://nextflix-azure.vercel.app/).
 Please leave a ⭐ as motivation if you liked the implementation 😄
 
 
+## At a glance
+
+```mermaid
+flowchart LR
+    N0["Browse the Next.js UI"]
+    N1["Request TMDB data"]
+    N2["Display movie and TV details"]
+    N0 --> N1 --> N2
+```
+
+
 ## Demo
 ![Demo](/public/assets/demo.gif)
 <br />
@@ -26,9 +37,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 In the project directory, you can run:
 
-#### `yarn start`
+#### `yarn dev`
 
 It runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser. 
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-
+For a production build, run `yarn build` followed by `yarn start`. These commands match the scripts in [package.json](package.json).
